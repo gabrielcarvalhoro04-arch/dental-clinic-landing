@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="no-js">
+<head>
+<meta charset="UTF-8">
+<script>
+  (function () {
+    document.documentElement.classList.replace('no-js', 'js');
+    try {
+      var t = localStorage.getItem('theme');
+      if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
+      if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
+    } catch (e) {}
+  })();
+</script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aurora Odontologia — Implantes, Próteses e Ortodontia</title>
+<meta name="description" content="Aurora Odontologia — implantes, próteses e ortodontia com planejamento individual e atendimento humanizado. Agende sua avaliação.">
+<meta name="theme-color" content="#0b0b0d">
+<meta name="color-scheme" content="dark light">
+<link rel="canonical" href="https://example.com/">
+
+<meta property="og:type" content="website">
+<meta property="og:locale" content="pt_BR">
+<meta property="og:site_name" content="Aurora Odontologia">
+<meta property="og:title" content="Aurora Odontologia">
+<meta property="og:description" content="Implantes, próteses e ortodontia com planejamento individual e atendimento humanizado.">
+<meta property="og:image" content="https://example.com/assets/img/og-cover.jpg">
+<meta property="og:url" content="https://example.com/">
+<meta name="twitter:card" content="summary_large_image">
+
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231a1710'/%3E%3Crect x='4' y='4' width='24' height='24' fill='none' stroke='%23f7f3e8' stroke-width='1.8'/%3E%3Cpath d='M16 8 L23.5 24 M16 8 L8.5 24 M11.6 19 h8.8' fill='none' stroke='%23f7f3e8' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Hanken+Grotesk:wght@400;500;600;700&display=swap">
+<link rel="stylesheet" href="assets/css/styles.css">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Dentist",
+  "name": "Aurora Odontologia",
+  "description": "Clínica odontológica especializada em implantes dentários, próteses e ortodontia.",
+  "image": "https://example.com/assets/img/og-cover.jpg",
+  "url": "https://example.com/",
+  "telephone": "+551199999-9999",
+  "priceRange": "$$",
+  "address": {
+    "@type": "PostalAddress",
+    "streetAddress": "Av. Paulista, 1000 - Bela Vista",
+    "addressLocality": "São Paulo",
+    "addressRegion": "SP",
+    "postalCode": "01310-100",
+    "addressCountry": "BR"
+  },
+  "geo": { "@type": "GeoCoordinates", "latitude": -23.5615, "longitude": -46.6560 },
+  "openingHoursSpecification": [{
+    "@type": "OpeningHoursSpecification",
+    "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
+    "opens": "09:00", "closes": "19:00"
+  }],
+  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "120" }
+}
+</script>
+</head>
+
+<body>
+<a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
+
+<!-- ===== CABEÇALHO ===== -->
+<header class="site-header" id="topo">
+  <div class="container site-header__inner">
+    <a class="brand" href="#topo" aria-label="Aurora Odontologia — início">
+      <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+        <rect x="2" y="2" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.4"/>
+        <path d="M24 12 L34 36 M24 12 L14 36 M17.6 29 h12.8" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="brand__type">
+        <span class="brand__name">Aurora</span>
+        <span class="brand__sub">Odontologia</span>
+      </span>
+    </a>
+
+    <div class="header__end">
+      <nav class="nav" id="menu" aria-label="Navegação principal">
+        <a class="nav__link" href="#tratamentos">Tratamentos</a>
+        <a class="nav__link" href="#clinica">A Clínica</a>
+        <a class="nav__link" href="#depoimentos">Depoimentos</a>
+        <a class="nav__link" href="#localizacao">Contato</a>
+        <div class="nav__cta">
+          <a class="btn btn--primary" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar</a>
+        </div>
+      </nav>
+
+      <button class="theme-toggle" type="button" data-theme-toggle aria-label="Alternar tema claro/escuro">
+        <svg class="icon-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M21 12.8A9 9 0 1 1 11.2 3a7 7 0 0 0 9.8 9.8z"/></svg>
+        <svg class="icon-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="4.5"/><path d="M12 2v2.5M12 19.5V22M4.2 4.2l1.8 1.8M18 18l1.8 1.8M2 12h2.5M19.5 12H22M4.2 19.8 6 18M18 6l1.8-1.8"/></svg>
+      </button>
+
+      <button class="nav__toggle" type="button" aria-label="Abrir menu" aria-expanded="false" aria-controls="menu">
+        <svg class="icon-open" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true"><path d="M4 8h16M4 16h16"/></svg>
+        <svg class="icon-close" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" aria-hidden="true" hidden><path d="M6 6l12 12M18 6L6 18"/></svg>
+      </button>
+    </div>
+  </div>
+</header>
+<div class="nav-scrim" aria-hidden="true"></div>
+
+<main id="conteudo">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" aria-label="Apresentação">
+    <div class="hero__media">
+      <img class="hero__img" src="assets/img/hero-bg.svg" alt="" decoding="async">
+      <!-- Slot de vídeo opcional: coloque assets/video/hero.mp4 (10–20s, sem áudio, em loop)
+           e o vídeo entra sozinho por cima do fundo. Sem o arquivo, nada quebra. -->
+      <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-bg.svg">
+        <source src="assets/video/hero.mp4" type="video/mp4">
+      </video>
+    </div>
+    <div class="hero__scrim"></div>
+
+    <div class="container hero__content">
+      <p class="hero__kicker" data-hero>Clínica Odontológica</p>
+      <h1 data-hero>Excelência em cada detalhe do seu <em>sorriso</em></h1>
+      <p class="hero__lead" data-hero>
+        Implantes, próteses e ortodontia com planejamento individual, tecnologia
+        e um atendimento que trata cada paciente como único.
+      </p>
+      <div class="hero__actions" data-hero>
+        <a class="btn btn--primary btn--lg" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9zm10.96-5.5c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a class="btn btn--ghost btn--lg" href="tel:+5511999999999">(11) 99999-9999</a>
+      </div>
+      <div class="hero__meta" data-hero>
+        <span>
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
+          <strong>4,9</strong>&nbsp;de avaliação média
+        </span>
+        <span class="dot"></span>
+        <span>Responsável técnico <strong>CRO-SP 00000</strong></span>
+        <span class="dot"></span>
+        <span><strong>+10 anos</strong>&nbsp;de clínica</span>
+      </div>
+    </div>
+
+    <div class="hero__scroll" aria-hidden="true"><span>Rolar</span></div>
+  </section>
+
+  <!-- ===== MANIFESTO ===== -->
+  <section class="section manifesto">
+    <div class="container" data-reveal>
+      <span class="mark" aria-hidden="true">—</span>
+      <p>Cada tratamento começa por ouvir você. Planejamos com precisão, executamos com cuidado e acompanhamos de perto — do primeiro contato ao resultado final.</p>
+    </div>
+  </section>
+
+  <!-- ===== NÚMEROS ===== -->
+  <section class="section" aria-label="A clínica em números" style="padding-block: clamp(2rem,5vw,4rem)">
+    <div class="container">
+      <div class="stats__grid">
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span data-count="10" data-decimals="0">10</span><sup>+</sup></div>
+          <span class="stat__label">Anos de experiência</span>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span data-count="4.9" data-decimals="1">4,9</span></div>
+          <span class="stat__label">Avaliação média</span>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span data-count="2000" data-decimals="0">2000</span><sup>+</sup></div>
+          <span class="stat__label">Pacientes atendidos</span>
+        </div>
+        <div class="stat" data-reveal>
+          <div class="stat__num"><span data-count="6" data-decimals="0">6</span></div>
+          <span class="stat__label">Especialidades</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== TRATAMENTOS ===== -->
+  <section class="section section--hairline" id="tratamentos" aria-labelledby="tx-title">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="kicker">Tratamentos</p>
+        <h2 id="tx-title">Cuidado completo, em um só lugar</h2>
+        <p class="lead">Do implante à manutenção preventiva, com planejamento individual e orçamento transparente.</p>
+      </div>
+
+      <div class="tx-grid">
+        <article class="tx" data-reveal>
+          <span class="tx__idx">01</span>
+          <div class="tx__body">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2 0-3 1.4-5.5 1.4C4.7 4.4 3 3.7 3 7c0 4 1.7 6.2 2.8 10.3.7 2.6 1.1 3.7 2 3.7 1 0 1.2-1.6 1.5-3.7.3-2 .6-3.3 2.7-3.3"/><path d="M12 3c2 0 3 1.4 5.5 1.4C19.3 4.4 21 3.7 21 7c0 3-1 5-2 7.5"/><circle cx="17" cy="17" r="3"/></svg>
+              Implantes dentários
+            </h3>
+            <p>Reposição de dentes perdidos com implantes de titânio, devolvendo mastigação, estética e segurança com planejamento individualizado.</p>
+          </div>
+        </article>
+
+        <article class="tx" data-reveal>
+          <span class="tx__idx">02</span>
+          <div class="tx__body">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m3 9 3-5 4 3 2-3 2 3 4-3 3 5"/><path d="M4 9c0 5 1.6 7.5 2.7 10.7.6 1.8 2.4 1.7 2.8-.2l.8-4c.3-1.4 1.5-1.4 1.8 0l.8 4c.4 1.9 2.2 2 2.8.2C19.4 16.5 21 14 21 9"/></svg>
+              Próteses dentárias
+            </h3>
+            <p>Próteses fixas, removíveis e protocolo sobre implantes, confeccionadas sob medida para um sorriso natural e funcional.</p>
+          </div>
+        </article>
+
+        <article class="tx" data-reveal>
+          <span class="tx__idx">03</span>
+          <div class="tx__body">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 8c5 4 11 4 16 0"/><path d="M4 8v4c0 4 3.6 7 8 7s8-3 8-7V8"/><path d="M8 10v5M12 10.5v6M16 10v5"/></svg>
+              Ortodontia
+            </h3>
+            <p>Aparelhos fixos e alinhadores para corrigir o posicionamento dos dentes e a mordida — em crianças, adolescentes e adultos.</p>
+          </div>
+        </article>
+
+        <article class="tx" data-reveal>
+          <span class="tx__idx">04</span>
+          <div class="tx__body">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3v3M12 18v3M5 12H2M22 12h-3M5 5l2 2M17 17l2 2M19 5l-2 2M7 17l-2 2"/><circle cx="12" cy="12" r="4"/></svg>
+              Clareamento dental
+            </h3>
+            <p>Clareamento profissional em consultório e supervisionado, para dentes visivelmente mais brancos com segurança e conforto.</p>
+          </div>
+        </article>
+
+        <article class="tx" data-reveal>
+          <span class="tx__idx">05</span>
+          <div class="tx__body">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 9c5 5 11 5 16 0"/><path d="M8 14c1.2 1.2 2.6 1.8 4 1.8s2.8-.6 4-1.8"/><circle cx="12" cy="12" r="9"/></svg>
+              Odontologia estética
+            </h3>
+            <p>Facetas, lentes de contato dental e restaurações que harmonizam a forma, a cor e a proporção do seu sorriso.</p>
+          </div>
+        </article>
+
+        <article class="tx" data-reveal>
+          <span class="tx__idx">06</span>
+          <div class="tx__body">
+            <h3>
+              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/><path d="m9 12 2 2 4-4"/></svg>
+              Prevenção e clínica geral
+            </h3>
+            <p>Limpeza, restaurações, tratamento de cáries e acompanhamento periódico para manter a saúde bucal sempre em dia.</p>
+          </div>
+        </article>
+      </div>
+
+      <p class="tx__note" data-reveal>
+        Também realizamos cirurgias orais menores, extrações e remoção de sisos.
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20um%20tratamento." target="_blank" rel="noopener">Fale conosco para avaliar o seu caso.</a>
+      </p>
+    </div>
+  </section>
+
+  <!-- ===== A CLÍNICA ===== -->
+  <section class="section section--hairline" id="clinica" aria-labelledby="cl-title">
+    <div class="container split split--flip">
+      <figure class="split__media" data-reveal>
+        <img src="assets/img/about.svg" alt="" decoding="async">
+      </figure>
+
+      <div class="split__body" data-reveal>
+        <p class="kicker">A Clínica</p>
+        <h2 id="cl-title">Um espaço pensado no seu conforto</h2>
+        <p>
+          A Aurora Odontologia une arquitetura acolhedora, ambientes higienizados
+          e equipamentos modernos para que cada visita seja tranquila — do
+          primeiro contato ao acompanhamento.
+        </p>
+        <p>
+          À frente do trabalho clínico está a Dra. Marina Rocha, cirurgiã-dentista
+          com especialização em Implantodontia e mais de 10 anos de experiência
+          clínica. Registro CRO-SP 00000.
+        </p>
+        <div class="creds">
+          <span class="cred">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"/></svg>
+            CRO-SP 00000
+          </span>
+          <span class="cred">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2 0-3 1.4-5.5 1.4C4.7 4.4 3 3.7 3 7c0 4 1.7 6.2 2.8 10.3.7 2.6 1.1 3.7 2 3.7s1.2-1.6 1.5-3.7c.3-2 .6-3.3 2.7-3.3s2.4 1.3 2.7 3.3c.3 2.1.5 3.7 1.5 3.7s1.3-1.1 2-3.7C21.3 13.2 23 11 23 7c0-3.3-1.7-2.6-3.5-2.6C17 4.4 16 3 14 3z"/></svg>
+            Especialista em Implantodontia
+          </span>
+          <span class="cred">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            +10 anos de clínica
+          </span>
+        </div>
+        <a class="btn btn--gold" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== JORNADA (sticky scroll · vanilla, sem dependências) ===== -->
+  <section class="section section--hairline" id="jornada" aria-labelledby="jor-title">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="kicker">Como funciona</p>
+        <h2 id="jor-title">Como é ser nosso paciente</h2>
+      </div>
+
+      <div class="journey" data-journey>
+        <ol class="journey__steps">
+          <li class="journey__step" data-journey-step="0">
+            <span class="journey__num">01</span>
+            <h3>Avaliação completa</h3>
+            <p>Exame clínico, radiografias e conversa sem pressa. Você sai da primeira consulta com um plano de tratamento claro e um orçamento transparente — sem etapas escondidas.</p>
+          </li>
+          <li class="journey__step" data-journey-step="1">
+            <span class="journey__num">02</span>
+            <h3>Tecnologia a favor do diagnóstico</h3>
+            <p>Equipamentos modernos para enxergar cada detalhe antes de começar. Menos surpresas e mais previsibilidade em implantes, próteses e ortodontia.</p>
+          </li>
+          <li class="journey__step" data-journey-step="2">
+            <span class="journey__num">03</span>
+            <h3>Tratamento com conforto</h3>
+            <p>Ambiente climatizado e higienizado, condução tranquila em cada etapa e todo o cuidado para que o procedimento seja o mais leve possível.</p>
+          </li>
+          <li class="journey__step" data-journey-step="3">
+            <span class="journey__num">04</span>
+            <h3>Acompanhamento e garantia</h3>
+            <p>Retornos programados e canal direto de contato. O cuidado continua depois que o sorriso fica pronto.</p>
+          </li>
+        </ol>
+
+        <div class="journey__sticky" aria-hidden="true">
+          <div class="journey__panel is-active" data-journey-panel="0">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M9 11l3 3 8-8"/><path d="M20 12v6a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h9"/></svg>
+            <span>Avaliação completa</span>
+          </div>
+          <div class="journey__panel" data-journey-panel="1">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="12" rx="2"/><path d="M8 20h8M12 16v4"/></svg>
+            <span>Diagnóstico digital</span>
+          </div>
+          <div class="journey__panel" data-journey-panel="2">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3c-2 0-3 1.4-5.5 1.4C4.7 4.4 3 3.7 3 7c0 4 1.7 6.2 2.8 10.3.7 2.6 1.1 3.7 2 3.7s1.2-1.6 1.5-3.7c.3-2 .6-3.3 2.7-3.3s2.4 1.3 2.7 3.3c.3 2.1.5 3.7 1.5 3.7s1.3-1.1 2-3.7C21.3 13.2 23 11 23 7c0-3.3-1.7-2.6-3.5-2.6C17 4.4 16 3 14 3z"/></svg>
+            <span>Tratamento com conforto</span>
+          </div>
+          <div class="journey__panel" data-journey-panel="3">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.35-7-10a4.5 4.5 0 0 1 7-2.6 4.5 4.5 0 0 1 7 2.6c0 5.65-7 10-7 10z"/></svg>
+            <span>Acompanhamento e garantia</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DIFERENCIAIS ===== -->
+  <section class="section section--hairline" id="diferenciais" aria-labelledby="dif-title">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="kicker">Por que a Aurora</p>
+        <h2 id="dif-title">Um cuidado que você sente desde a recepção</h2>
+      </div>
+
+      <div class="why-list">
+        <article class="why-item" data-reveal>
+          <span class="why-item__idx">01</span>
+          <div><h3>Atendimento humanizado</h3><p>Escuta atenta, acolhimento e explicação clara de cada etapa do tratamento.</p></div>
+        </article>
+        <article class="why-item" data-reveal>
+          <span class="why-item__idx">02</span>
+          <div><h3>Ambiente e tecnologia</h3><p>Consultórios higienizados e climatizados, com equipamentos modernos para diagnóstico e tratamento.</p></div>
+        </article>
+        <article class="why-item" data-reveal>
+          <span class="why-item__idx">03</span>
+          <div><h3>Localização de fácil acesso</h3><p>No centro da cidade, com transporte público próximo e estacionamento na região.</p></div>
+        </article>
+        <article class="why-item" data-reveal>
+          <span class="why-item__idx">04</span>
+          <div><h3>Agendamento rápido</h3><p>Retorno ágil por WhatsApp para dúvidas e marcação de consultas.</p></div>
+        </article>
+        <article class="why-item" data-reveal>
+          <span class="why-item__idx">05</span>
+          <div><h3>Equipe especializada</h3><p>Profissionais registrados, com formação continuada e foco em previsibilidade dos resultados.</p></div>
+        </article>
+        <article class="why-item" data-reveal>
+          <span class="why-item__idx">06</span>
+          <div><h3>Planejamento individual</h3><p>Cada caso é avaliado e planejado de forma personalizada, com orçamento transparente.</p></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== DEPOIMENTOS ===== -->
+  <section class="section section--hairline" id="depoimentos" aria-labelledby="dep-title">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="kicker">Depoimentos</p>
+        <h2 id="dep-title">O que dizem nossos pacientes</h2>
+        <span class="reviews__badge">
+          <span class="stars" aria-hidden="true">
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
+            <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
+          </span>
+          4,9 de avaliação média · +120 pacientes
+        </span>
+      </div>
+
+      <div class="slider" data-slider data-reveal aria-roledescription="carrossel" aria-label="Depoimentos de pacientes">
+        <div class="slider__viewport">
+          <div class="slider__track">
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="1 de 3">
+              <blockquote>Atendimento impecável do começo ao fim. Equipe atenciosa, ambiente limpo e tudo explicado com calma. Recomendo muito.</blockquote>
+              <div class="slide__author">
+                <span class="slide__avatar" aria-hidden="true">A</span>
+                <span class="slide__meta"><strong>Ana P.</strong><span>Avaliação verificada</span></span>
+              </div>
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 3">
+              <blockquote>Fiz implante e prótese e o resultado ficou natural. Marcaram tudo pelo WhatsApp, sem burocracia e no meu tempo.</blockquote>
+              <div class="slide__author">
+                <span class="slide__avatar" aria-hidden="true">C</span>
+                <span class="slide__meta"><strong>Carlos M.</strong><span>Avaliação verificada</span></span>
+              </div>
+            </div>
+            <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 3">
+              <blockquote>Cheguei com receio de dentista e saí tranquila. Apresentaram o plano de tratamento e o orçamento antes de qualquer procedimento.</blockquote>
+              <div class="slide__author">
+                <span class="slide__avatar" aria-hidden="true">J</span>
+                <span class="slide__meta"><strong>Juliana R.</strong><span>Avaliação verificada</span></span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="slider__controls">
+          <button class="slider__btn" type="button" data-slider-prev aria-label="Depoimento anterior">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m15 18-6-6 6-6"/></svg>
+          </button>
+          <button class="slider__btn" type="button" data-slider-pause aria-pressed="false">
+            <svg class="icon-pause" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 5h4v14H6zM14 5h4v14h-4z"/></svg>
+            <svg class="icon-play" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true" hidden><path d="M8 5v14l11-7z"/></svg>
+            <span class="label sr-only">Pausar apresentação</span>
+          </button>
+          <button class="slider__btn" type="button" data-slider-next aria-label="Próximo depoimento">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m9 6 6 6-6 6"/></svg>
+          </button>
+          <span class="slider__status" aria-hidden="true"><b data-slider-cur>01</b> / 03</span>
+        </div>
+        <p class="sr-only" data-slider-live aria-live="polite"></p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== LOCALIZAÇÃO ===== -->
+  <section class="section section--hairline" id="localizacao" aria-labelledby="loc-title">
+    <div class="container">
+      <div class="section__head" data-reveal>
+        <p class="kicker">Contato</p>
+        <h2 id="loc-title">Onde nos encontrar</h2>
+        <p class="lead">No centro da cidade, com fácil acesso e transporte público próximo.</p>
+      </div>
+
+      <div class="loc">
+        <div class="loc__info" data-reveal>
+          <div class="loc__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <div>
+              <h3>Endereço</h3>
+              <p>Av. Paulista, 1000 — Bela Vista<br>São Paulo / SP · CEP 01310-100</p>
+            </div>
+          </div>
+          <div class="loc__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/></svg>
+            <div style="flex:1">
+              <h3>Horário de atendimento</h3>
+              <table class="hours"><tbody>
+                <tr><th scope="row">Segunda a sexta</th><td>09h – 19h</td></tr>
+                <tr><th scope="row">Sábado</th><td>Sob agendamento</td></tr>
+                <tr><th scope="row">Domingo</th><td>Fechado</td></tr>
+              </tbody></table>
+            </div>
+          </div>
+          <div class="loc__row">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.05.36 2.07.68 3.06a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.02-1.02a2 2 0 0 1 2.11-.45c.99.32 2.01.55 3.06.68A2 2 0 0 1 22 16.92z"/></svg>
+            <div>
+              <h3>Telefone e WhatsApp</h3>
+              <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+            </div>
+          </div>
+
+          <div class="loc__actions">
+            <a class="btn btn--primary" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+            <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Paulista%2C%201000%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Como chegar</a>
+          </div>
+        </div>
+
+        <div class="map-frame" data-reveal>
+          <iframe
+            title="Mapa — localização da clínica"
+            src="https://www.google.com/maps?q=Av.%20Paulista%2C%201000%2C%20S%C3%A3o%20Paulo&z=15&output=embed"
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CTA FINAL ===== -->
+  <section class="cta-final" aria-labelledby="cta-title">
+    <div class="cta-final__glow" data-glow aria-hidden="true"></div>
+    <div class="container">
+      <h2 id="cta-title" data-reveal>Vamos cuidar do seu sorriso</h2>
+      <p data-reveal>Agende sua avaliação pelo WhatsApp. Respondemos rápido e explicamos cada passo do tratamento.</p>
+      <div class="cta-final__actions" data-reveal>
+        <a class="btn btn--primary btn--lg" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9zm10.96-5.5c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41z"/></svg>
+          Agendar pelo WhatsApp
+        </a>
+        <a class="btn btn--ghost btn--lg" href="tel:+5511999999999">Ligar: (11) 99999-9999</a>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===== RODAPÉ ===== -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer__grid">
+      <div class="footer__brand">
+        <span class="brand">
+          <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
+            <rect x="2" y="2" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.4"/>
+            <path d="M24 12 L34 36 M24 12 L14 36 M17.6 29 h12.8" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+          <span class="brand__type">
+            <span class="brand__name">Aurora</span>
+            <span class="brand__sub">Odontologia</span>
+          </span>
+        </span>
+        <p>Landing page de demonstração para clínica odontológica — implantes, próteses e ortodontia.</p>
+        <div class="footer__social">
+          <a href="#" aria-label="Instagram">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
+          </a>
+          <a href="#" aria-label="Facebook">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l.5-3H14V4.5c0-.8.3-1.5 1.6-1.5H18V.2A22 22 0 0 0 15.4 0C12.8 0 11 1.6 11 4.3V6H8v3h3v9h3z"/></svg>
+          </a>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+            <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zm6.54-3.8c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9z"/></svg>
+          </a>
+        </div>
+      </div>
+
+      <nav class="footer__col" aria-label="Navegação do rodapé">
+        <h3>Navegação</h3>
+        <ul>
+          <li><a href="#topo">Início</a></li>
+          <li><a href="#tratamentos">Tratamentos</a></li>
+          <li><a href="#clinica">A Clínica</a></li>
+          <li><a href="#depoimentos">Depoimentos</a></li>
+          <li><a href="#localizacao">Contato</a></li>
+        </ul>
+      </nav>
+
+      <div class="footer__col">
+        <h3>Tratamentos</h3>
+        <ul>
+          <li><a href="#tratamentos">Implantes dentários</a></li>
+          <li><a href="#tratamentos">Próteses dentárias</a></li>
+          <li><a href="#tratamentos">Ortodontia</a></li>
+          <li><a href="#tratamentos">Clareamento dental</a></li>
+          <li><a href="#tratamentos">Odontologia estética</a></li>
+        </ul>
+      </div>
+
+      <div class="footer__col">
+        <h3>Contato</h3>
+        <ul>
+          <li>Av. Paulista, 1000<br>Bela Vista — São Paulo / SP</li>
+          <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+          <li>Seg. a sex., 09h às 19h</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="footer__bottom">
+      <p>© <span data-year>2026</span> Aurora Odontologia. Projeto de demonstração — nome, endereço, telefone e avaliações são fictícios.</p>
+      <p>As informações deste site têm caráter informativo e não substituem uma consulta odontológica.</p>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== LIGHTBOX DE VÍDEO ===== -->
+<div class="video-modal" data-video-modal role="dialog" aria-modal="true" aria-label="Vídeo" hidden>
+  <div class="video-modal__dialog">
+    <button type="button" class="video-modal__close" data-video-close aria-label="Fechar vídeo">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6L6 18"/></svg>
+    </button>
+    <div class="video-modal__stage" data-video-stage></div>
+  </div>
+</div>
+
+<a class="wa-float" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zm6.54-3.8c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9zm10.96-5.5c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41z"/></svg>
+</a>
+
+<script defer src="assets/js/main.js"></script>
+</body>
+</html>

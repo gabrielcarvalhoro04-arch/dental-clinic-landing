@@ -1,0 +1,13 @@
+Optional hero background video.
+
+Drop a file named  hero.mp4  in this folder:
+  - 10-20 seconds, horizontal, 1080p
+  - NO audio, seamless loop
+  - keep it light (~2-4 MB)
+
+It layers automatically over the animated background in the hero section
+(the <video> element is already wired in index.html). Without the file,
+nothing breaks - the hero uses the CSS animated backdrop + hero-bg.svg.
+
+For a YouTube/Vimeo clip in the lightbox instead, point any element with
+  data-video-dialog  data-video-src="https://www.youtube.com/embed/XXXX"
