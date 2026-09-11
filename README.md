@@ -64,7 +64,7 @@ dental-clinic-landing/
 | Default theme | The `data-theme` logic in the inline `<script>` in `<head>` |
 | Text, links, sections | `index.html` |
 | Phone / WhatsApp | search `5500000000000` and `+5500000000000` |
-| Hero video | `assets/video/hero.mp4` ships as a placeholder clip (an original animated tooth scene, generated for this template — not stock footage) so the "video hero" effect is visible out of the box. Swap it for real footage of the same length (6–20s, muted, loop) and nothing else needs to change |
+| Hero video | `assets/video/hero.mp4` ships with a placeholder clip (AI-generated, generic — a smile and a clinic reception, no real name or brand) so the "video hero" effect is visible out of the box. Swap it for real footage of the same length (4–20s, muted, loop) and nothing else needs to change |
 | Hero / about imagery | replace `assets/img/hero-bg.svg` and `assets/img/about.svg` with real photos and update the `src` |
 | Map | the "Localização" section ships a placeholder block (`.map-frame--placeholder`) — swap it for a Google Maps `<iframe>` (Share → Embed a map) once you have a real address |
 
