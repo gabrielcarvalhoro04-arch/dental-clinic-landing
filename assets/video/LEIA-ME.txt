@@ -1,13 +1,14 @@
-Optional hero background video.
+hero.mp4
 
-Drop a file named  hero.mp4  in this folder:
-  - 10-20 seconds, horizontal, 1080p
-  - NO audio, seamless loop
-  - keep it light (~2-4 MB)
+Este arquivo já vem incluído: é uma cena animada original (dente + brilho
+dourado + partículas), gerada em canvas especialmente para este modelo —
+não é vídeo de banco de imagens nem tem relação com nenhuma clínica real.
+Serve pra mostrar o efeito de "vídeo de fundo no topo do site" prontinho.
 
-It layers automatically over the animated background in the hero section
-(the <video> element is already wired in index.html). Without the file,
-nothing breaks - the hero uses the CSS animated backdrop + hero-bg.svg.
+Pra trocar por uma filmagem de verdade, é só substituir este arquivo por
+outro com o mesmo nome (hero.mp4):
+  - 6-20 segundos, horizontal, 1080p
+  - SEM áudio, loop contínuo
+  - leve (~2-4 MB)
 
-For a YouTube/Vimeo clip in the lightbox instead, point any element with
-  data-video-dialog  data-video-src="https://www.youtube.com/embed/XXXX"
+Nada mais precisa mudar — o <video> em index.html já aponta pra cá.

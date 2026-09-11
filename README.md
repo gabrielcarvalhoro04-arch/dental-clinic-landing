@@ -49,7 +49,7 @@ dental-clinic-landing/
 │   ├── img/
 │   │   ├── hero-bg.svg     # abstract hero backdrop (swap for a photo/video)
 │   │   └── about.svg       # abstract panel for the "A Clínica" section
-│   └── video/             # optional: drop hero.mp4 here (see LEIA-ME.txt)
+│   └── video/hero.mp4     # hero background clip (placeholder — see below)
 └── LICENSE
 ```
 
@@ -64,7 +64,7 @@ dental-clinic-landing/
 | Default theme | The `data-theme` logic in the inline `<script>` in `<head>` |
 | Text, links, sections | `index.html` |
 | Phone / WhatsApp | search `5500000000000` and `+5500000000000` |
-| Hero motion | there's an animated tooth placeholder (`.hero__figure`) standing in for a video — add `assets/video/hero.mp4` (10–20s, muted, loop) and it layers on top automatically; remove `.hero__figure` from the HTML once you have real footage |
+| Hero video | `assets/video/hero.mp4` ships as a placeholder clip (an original animated tooth scene, generated for this template — not stock footage) so the "video hero" effect is visible out of the box. Swap it for real footage of the same length (6–20s, muted, loop) and nothing else needs to change |
 | Hero / about imagery | replace `assets/img/hero-bg.svg` and `assets/img/about.svg` with real photos and update the `src` |
 | Map | the "Localização" section ships a placeholder block (`.map-frame--placeholder`) — swap it for a Google Maps `<iframe>` (Share → Embed a map) once you have a real address |
 
