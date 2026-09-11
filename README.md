@@ -95,4 +95,5 @@ dental-clinic-landing/
 
 ## License
 
-MIT — see [`LICENSE`](LICENSE).
+All rights reserved — published for portfolio/demonstration purposes only.
+See [`LICENSE`](LICENSE).
