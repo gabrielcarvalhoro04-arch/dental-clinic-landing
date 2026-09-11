@@ -6,29 +6,30 @@
   (function () {
     document.documentElement.classList.replace('no-js', 'js');
     try {
-      var t = localStorage.getItem('theme');
+      var p = new URLSearchParams(location.search).get('theme');
+      var t = (p === 'light' || p === 'dark') ? p : localStorage.getItem('theme');
       if (!t) t = matchMedia('(prefers-color-scheme: light)').matches ? 'light' : 'dark';
       if (t === 'light') document.documentElement.setAttribute('data-theme', 'light');
     } catch (e) {}
   })();
 </script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Aurora Odontologia — Implantes, Próteses e Ortodontia</title>
-<meta name="description" content="Aurora Odontologia — implantes, próteses e ortodontia com planejamento individual e atendimento humanizado. Agende sua avaliação.">
+<title>Modelo de site — Clínica Odontológica</title>
+<meta name="description" content="Modelo de landing page para clínica odontológica: temas claro e escuro, animações leves, acessível e rápido. Conteúdo fictício, pronto para personalizar.">
 <meta name="theme-color" content="#0b0b0d">
 <meta name="color-scheme" content="dark light">
 <link rel="canonical" href="https://example.com/">
 
 <meta property="og:type" content="website">
 <meta property="og:locale" content="pt_BR">
-<meta property="og:site_name" content="Aurora Odontologia">
-<meta property="og:title" content="Aurora Odontologia">
-<meta property="og:description" content="Implantes, próteses e ortodontia com planejamento individual e atendimento humanizado.">
+<meta property="og:site_name" content="Clínica Odontológica — modelo">
+<meta property="og:title" content="Modelo de site — Clínica Odontológica">
+<meta property="og:description" content="Landing page para clínica odontológica: dois temas, animações leves, acessível. Conteúdo fictício.">
 <meta property="og:image" content="https://example.com/assets/img/og-cover.jpg">
 <meta property="og:url" content="https://example.com/">
 <meta name="twitter:card" content="summary_large_image">
 
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231a1710'/%3E%3Crect x='4' y='4' width='24' height='24' fill='none' stroke='%23f7f3e8' stroke-width='1.8'/%3E%3Cpath d='M16 8 L23.5 24 M16 8 L8.5 24 M11.6 19 h8.8' fill='none' stroke='%23f7f3e8' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='4' fill='%231a1710'/%3E%3Cpath d='M16 6c-4 0-6 2.5-8 2.5-2.6 0-3 2.5-3 6 0 5.5 2 9.5 3.4 13.5 1 2.6 1.6 3.5 2.3 3.5 1 0 1.2-2 1.5-4.2.3-2.2.5-3.6 1.8-3.6s1.5 1.4 1.8 3.6c.3 2.2.5 4.2 1.5 4.2.7 0 1.3-.9 2.3-3.5C25.6 24 27.6 20 27.6 14.5c0-3.5-.4-6-3-6-2 0-4-2.5-8-2.5z' fill='none' stroke='%23e4c77f' stroke-width='1.6'/%3E%3C/svg%3E">
 
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -39,27 +40,14 @@
 {
   "@context": "https://schema.org",
   "@type": "Dentist",
-  "name": "Aurora Odontologia",
-  "description": "Clínica odontológica especializada em implantes dentários, próteses e ortodontia.",
-  "image": "https://example.com/assets/img/og-cover.jpg",
+  "name": "Clínica Odontológica",
   "url": "https://example.com/",
-  "telephone": "+551199999-9999",
   "priceRange": "$$",
-  "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "Av. Paulista, 1000 - Bela Vista",
-    "addressLocality": "São Paulo",
-    "addressRegion": "SP",
-    "postalCode": "01310-100",
-    "addressCountry": "BR"
-  },
-  "geo": { "@type": "GeoCoordinates", "latitude": -23.5615, "longitude": -46.6560 },
   "openingHoursSpecification": [{
     "@type": "OpeningHoursSpecification",
     "dayOfWeek": ["Monday", "Tuesday", "Wednesday", "Thursday", "Friday"],
     "opens": "09:00", "closes": "19:00"
-  }],
-  "aggregateRating": { "@type": "AggregateRating", "ratingValue": "4.9", "reviewCount": "120" }
+  }]
 }
 </script>
 </head>
@@ -70,13 +58,13 @@
 <!-- ===== CABEÇALHO ===== -->
 <header class="site-header" id="topo">
   <div class="container site-header__inner">
-    <a class="brand" href="#topo" aria-label="Aurora Odontologia — início">
+    <a class="brand" href="#topo" aria-label="Clínica odontológica — início">
       <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
         <rect x="2" y="2" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.4"/>
-        <path d="M24 12 L34 36 M24 12 L14 36 M17.6 29 h12.8" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+        <path d="M24 12c-4.4 0-6.6 2.6-8.8 2.6-2.9 0-3.4 2.6-3.4 6.5 0 6 2.2 10.4 3.8 14.7 1 2.8 1.7 3.9 2.6 3.9 1.1 0 1.3-2.2 1.6-4.6.3-2.4.6-4 2.6-4s2.3 1.6 2.6 4c.3 2.4.5 4.6 1.6 4.6.9 0 1.6-1.1 2.6-3.9 1.6-4.3 3.8-8.7 3.8-14.7 0-3.9-.5-6.5-3.4-6.5-2.2 0-4.4-2.6-8.8-2.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
       </svg>
       <span class="brand__type">
-        <span class="brand__name">Aurora</span>
+        <span class="brand__name">Sua Clínica</span>
         <span class="brand__sub">Odontologia</span>
       </span>
     </a>
@@ -88,7 +76,7 @@
         <a class="nav__link" href="#depoimentos">Depoimentos</a>
         <a class="nav__link" href="#localizacao">Contato</a>
         <div class="nav__cta">
-          <a class="btn btn--primary" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar</a>
+          <a class="btn btn--primary" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar</a>
         </div>
       </nav>
 
@@ -112,27 +100,35 @@
   <section class="hero" aria-label="Apresentação">
     <div class="hero__media">
       <img class="hero__img" src="assets/img/hero-bg.svg" alt="" decoding="async">
-      <!-- Slot de vídeo opcional: coloque assets/video/hero.mp4 (10–20s, sem áudio, em loop)
-           e o vídeo entra sozinho por cima do fundo. Sem o arquivo, nada quebra. -->
+      <!-- Slot de vídeo opcional: coloque assets/video/hero.mp4 (10–20s, sem áudio, em loop).
+           Sem o arquivo, o hero usa o fundo animado + o dente que se move abaixo. -->
       <video class="hero__video" autoplay muted loop playsinline preload="metadata" poster="assets/img/hero-bg.svg">
         <source src="assets/video/hero.mp4" type="video/mp4">
       </video>
     </div>
     <div class="hero__scrim"></div>
 
+    <!-- placeholder animado: um dente que flutua devagar (troque por vídeo real quando tiver) -->
+    <div class="hero__figure" aria-hidden="true">
+      <svg viewBox="0 0 100 122" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round">
+        <path d="M50 6c-9 0-13.5 5.4-18 5.4C26 11.4 23 16.7 23 24.7c0 12.4 4.6 21.5 8 30.5 2.1 5.6 3.5 8.3 5.4 8.3 2.3 0 2.7-4.6 3.3-9.5.6-5 1.3-8.3 5.3-8.3s4.7 3.3 5.3 8.3c.6 4.9 1 9.5 3.3 9.5 1.9 0 3.3-2.7 5.4-8.3 3.4-9 8-18.1 8-30.5 0-8-3-13.3-9-13.3-4.5 0-9-5.4-18-5.4z"/>
+        <path d="M40 30c3-2 7-2 10 0" opacity="0.5"/>
+      </svg>
+    </div>
+
     <div class="container hero__content">
-      <p class="hero__kicker" data-hero>Clínica Odontológica</p>
+      <p class="hero__kicker" data-hero>Modelo · Clínica Odontológica</p>
       <h1 data-hero>Excelência em cada detalhe do seu <em>sorriso</em></h1>
       <p class="hero__lead" data-hero>
         Implantes, próteses e ortodontia com planejamento individual, tecnologia
         e um atendimento que trata cada paciente como único.
       </p>
       <div class="hero__actions" data-hero>
-        <a class="btn btn--primary btn--lg" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+        <a class="btn btn--primary btn--lg" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9zm10.96-5.5c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41z"/></svg>
           Agendar pelo WhatsApp
         </a>
-        <a class="btn btn--ghost btn--lg" href="tel:+5511999999999">(11) 99999-9999</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+5500000000000">(00) 00000-0000</a>
       </div>
       <div class="hero__meta" data-hero>
         <span>
@@ -140,7 +136,7 @@
           <strong>4,9</strong>&nbsp;de avaliação média
         </span>
         <span class="dot"></span>
-        <span>Responsável técnico <strong>CRO-SP 00000</strong></span>
+        <span>Responsável técnico <strong>CRO-UF 00000</strong></span>
         <span class="dot"></span>
         <span><strong>+10 anos</strong>&nbsp;de clínica</span>
       </div>
@@ -260,7 +256,7 @@
 
       <p class="tx__note" data-reveal>
         Também realizamos cirurgias orais menores, extrações e remoção de sisos.
-        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20um%20tratamento." target="_blank" rel="noopener">Fale conosco para avaliar o seu caso.</a>
+        <a href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20sobre%20um%20tratamento." target="_blank" rel="noopener">Fale conosco para avaliar o seu caso.</a>
       </p>
     </div>
   </section>
@@ -276,19 +272,19 @@
         <p class="kicker">A Clínica</p>
         <h2 id="cl-title">Um espaço pensado no seu conforto</h2>
         <p>
-          A Aurora Odontologia une arquitetura acolhedora, ambientes higienizados
-          e equipamentos modernos para que cada visita seja tranquila — do
-          primeiro contato ao acompanhamento.
+          Arquitetura acolhedora, ambientes higienizados e equipamentos modernos
+          para que cada visita seja tranquila — do primeiro contato ao
+          acompanhamento.
         </p>
         <p>
-          À frente do trabalho clínico está a Dra. Marina Rocha, cirurgiã-dentista
-          com especialização em Implantodontia e mais de 10 anos de experiência
-          clínica. Registro CRO-SP 00000.
+          À frente do trabalho clínico está o(a) responsável técnico(a) —
+          cirurgião(ã)-dentista com especialização em Implantodontia e mais de
+          10 anos de experiência clínica. Registro CRO-UF 00000.
         </p>
         <div class="creds">
           <span class="cred">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="12" cy="8" r="5"/><path d="M8.5 12.5 7 22l5-3 5 3-1.5-9.5"/></svg>
-            CRO-SP 00000
+            CRO-UF 00000
           </span>
           <span class="cred">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3c-2 0-3 1.4-5.5 1.4C4.7 4.4 3 3.7 3 7c0 4 1.7 6.2 2.8 10.3.7 2.6 1.1 3.7 2 3.7s1.2-1.6 1.5-3.7c.3-2 .6-3.3 2.7-3.3s2.4 1.3 2.7 3.3c.3 2.1.5 3.7 1.5 3.7s1.3-1.1 2-3.7C21.3 13.2 23 11 23 7c0-3.3-1.7-2.6-3.5-2.6C17 4.4 16 3 14 3z"/></svg>
@@ -299,7 +295,7 @@
             +10 anos de clínica
           </span>
         </div>
-        <a class="btn btn--gold" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
+        <a class="btn btn--gold" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar avaliação</a>
       </div>
     </div>
   </section>
@@ -362,7 +358,7 @@
   <section class="section section--hairline" id="diferenciais" aria-labelledby="dif-title">
     <div class="container">
       <div class="section__head" data-reveal>
-        <p class="kicker">Por que a Aurora</p>
+        <p class="kicker">Diferenciais</p>
         <h2 id="dif-title">Um cuidado que você sente desde a recepção</h2>
       </div>
 
@@ -409,7 +405,7 @@
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
             <svg viewBox="0 0 24 24" fill="currentColor"><path d="m12 17.27 5.18 3.12-1.37-5.9L20.5 10l-6.05-.5L12 4 9.55 9.5 3.5 10l4.69 4.59-1.37 5.9z"/></svg>
           </span>
-          4,9 de avaliação média · +120 pacientes
+          4,9 de avaliação média · conteúdo fictício
         </span>
       </div>
 
@@ -419,22 +415,22 @@
             <div class="slide" role="group" aria-roledescription="slide" aria-label="1 de 3">
               <blockquote>Atendimento impecável do começo ao fim. Equipe atenciosa, ambiente limpo e tudo explicado com calma. Recomendo muito.</blockquote>
               <div class="slide__author">
-                <span class="slide__avatar" aria-hidden="true">A</span>
-                <span class="slide__meta"><strong>Ana P.</strong><span>Avaliação verificada</span></span>
+                <span class="slide__avatar" aria-hidden="true">1</span>
+                <span class="slide__meta"><strong>Paciente A.</strong><span>Depoimento ilustrativo</span></span>
               </div>
             </div>
             <div class="slide" role="group" aria-roledescription="slide" aria-label="2 de 3">
               <blockquote>Fiz implante e prótese e o resultado ficou natural. Marcaram tudo pelo WhatsApp, sem burocracia e no meu tempo.</blockquote>
               <div class="slide__author">
-                <span class="slide__avatar" aria-hidden="true">C</span>
-                <span class="slide__meta"><strong>Carlos M.</strong><span>Avaliação verificada</span></span>
+                <span class="slide__avatar" aria-hidden="true">2</span>
+                <span class="slide__meta"><strong>Paciente B.</strong><span>Depoimento ilustrativo</span></span>
               </div>
             </div>
             <div class="slide" role="group" aria-roledescription="slide" aria-label="3 de 3">
               <blockquote>Cheguei com receio de dentista e saí tranquila. Apresentaram o plano de tratamento e o orçamento antes de qualquer procedimento.</blockquote>
               <div class="slide__author">
-                <span class="slide__avatar" aria-hidden="true">J</span>
-                <span class="slide__meta"><strong>Juliana R.</strong><span>Avaliação verificada</span></span>
+                <span class="slide__avatar" aria-hidden="true">3</span>
+                <span class="slide__meta"><strong>Paciente C.</strong><span>Depoimento ilustrativo</span></span>
               </div>
             </div>
           </div>
@@ -465,7 +461,7 @@
       <div class="section__head" data-reveal>
         <p class="kicker">Contato</p>
         <h2 id="loc-title">Onde nos encontrar</h2>
-        <p class="lead">No centro da cidade, com fácil acesso e transporte público próximo.</p>
+        <p class="lead">Preencha com o endereço da sua clínica — o mapa abaixo é um espaço reservado.</p>
       </div>
 
       <div class="loc">
@@ -474,7 +470,7 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
             <div>
               <h3>Endereço</h3>
-              <p>Av. Paulista, 1000 — Bela Vista<br>São Paulo / SP · CEP 01310-100</p>
+              <p>Rua Exemplo, 000 — Bairro Centro<br>Cidade / UF · CEP 00000-000</p>
             </div>
           </div>
           <div class="loc__row">
@@ -492,21 +488,21 @@
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13 1.05.36 2.07.68 3.06a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.02-1.02a2 2 0 0 1 2.11-.45c.99.32 2.01.55 3.06.68A2 2 0 0 1 22 16.92z"/></svg>
             <div>
               <h3>Telefone e WhatsApp</h3>
-              <p><a href="tel:+5511999999999">(11) 99999-9999</a></p>
+              <p><a href="tel:+5500000000000">(00) 00000-0000</a></p>
             </div>
           </div>
 
           <div class="loc__actions">
-            <a class="btn btn--primary" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar no WhatsApp</a>
-            <a class="btn btn--ghost" href="https://www.google.com/maps/dir/?api=1&destination=Av.%20Paulista%2C%201000%2C%20S%C3%A3o%20Paulo" target="_blank" rel="noopener">Como chegar</a>
+            <a class="btn btn--primary" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">Agendar no WhatsApp</a>
+            <a class="btn btn--ghost" href="#localizacao">Como chegar</a>
           </div>
         </div>
 
-        <div class="map-frame" data-reveal>
-          <iframe
-            title="Mapa — localização da clínica"
-            src="https://www.google.com/maps?q=Av.%20Paulista%2C%201000%2C%20S%C3%A3o%20Paulo&z=15&output=embed"
-            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <!-- Espaço reservado para o mapa. Substitua por um <iframe> do Google Maps
+             (Compartilhar > Incorporar um mapa) com o endereço real da clínica. -->
+        <div class="map-frame map-frame--placeholder" data-reveal aria-hidden="true">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.3" stroke-linecap="round" stroke-linejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0z"/><circle cx="12" cy="10" r="3"/></svg>
+          <span>Mapa da localização</span>
         </div>
       </div>
     </div>
@@ -519,11 +515,11 @@
       <h2 id="cta-title" data-reveal>Vamos cuidar do seu sorriso</h2>
       <p data-reveal>Agende sua avaliação pelo WhatsApp. Respondemos rápido e explicamos cada passo do tratamento.</p>
       <div class="cta-final__actions" data-reveal>
-        <a class="btn btn--primary btn--lg" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
+        <a class="btn btn--primary btn--lg" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener">
           <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zM6.6 20.2c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9zm10.96-5.5c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.52.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41z"/></svg>
           Agendar pelo WhatsApp
         </a>
-        <a class="btn btn--ghost btn--lg" href="tel:+5511999999999">Ligar: (11) 99999-9999</a>
+        <a class="btn btn--ghost btn--lg" href="tel:+5500000000000">Ligar: (00) 00000-0000</a>
       </div>
     </div>
   </section>
@@ -538,14 +534,14 @@
         <span class="brand">
           <svg class="brand__mark" viewBox="0 0 48 48" aria-hidden="true">
             <rect x="2" y="2" width="44" height="44" fill="none" stroke="currentColor" stroke-width="2.4"/>
-            <path d="M24 12 L34 36 M24 12 L14 36 M17.6 29 h12.8" fill="none" stroke="currentColor" stroke-width="3.4" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M24 12c-4.4 0-6.6 2.6-8.8 2.6-2.9 0-3.4 2.6-3.4 6.5 0 6 2.2 10.4 3.8 14.7 1 2.8 1.7 3.9 2.6 3.9 1.1 0 1.3-2.2 1.6-4.6.3-2.4.6-4 2.6-4s2.3 1.6 2.6 4c.3 2.4.5 4.6 1.6 4.6.9 0 1.6-1.1 2.6-3.9 1.6-4.3 3.8-8.7 3.8-14.7 0-3.9-.5-6.5-3.4-6.5-2.2 0-4.4-2.6-8.8-2.6z" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/>
           </svg>
           <span class="brand__type">
-            <span class="brand__name">Aurora</span>
+            <span class="brand__name">Sua Clínica</span>
             <span class="brand__sub">Odontologia</span>
           </span>
         </span>
-        <p>Landing page de demonstração para clínica odontológica — implantes, próteses e ortodontia.</p>
+        <p>Modelo de landing page para clínica odontológica — implantes, próteses e ortodontia.</p>
         <div class="footer__social">
           <a href="#" aria-label="Instagram">
             <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg>
@@ -553,7 +549,7 @@
           <a href="#" aria-label="Facebook">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M14 9h3l.5-3H14V4.5c0-.8.3-1.5 1.6-1.5H18V.2A22 22 0 0 0 15.4 0C12.8 0 11 1.6 11 4.3V6H8v3h3v9h3z"/></svg>
           </a>
-          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener" aria-label="WhatsApp">
+          <a href="#" aria-label="WhatsApp">
             <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zm6.54-3.8c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9z"/></svg>
           </a>
         </div>
@@ -584,15 +580,15 @@
       <div class="footer__col">
         <h3>Contato</h3>
         <ul>
-          <li>Av. Paulista, 1000<br>Bela Vista — São Paulo / SP</li>
-          <li><a href="tel:+5511999999999">(11) 99999-9999</a></li>
+          <li>Rua Exemplo, 000<br>Bairro Centro — Cidade / UF</li>
+          <li><a href="tel:+5500000000000">(00) 00000-0000</a></li>
           <li>Seg. a sex., 09h às 19h</li>
         </ul>
       </div>
     </div>
 
     <div class="footer__bottom">
-      <p>© <span data-year>2026</span> Aurora Odontologia. Projeto de demonstração — nome, endereço, telefone e avaliações são fictícios.</p>
+      <p>© <span data-year>2026</span> · Modelo de site para clínica odontológica. Nome, textos, dados e avaliações são fictícios e servem apenas de exemplo.</p>
       <p>As informações deste site têm caráter informativo e não substituem uma consulta odontológica.</p>
     </div>
   </div>
@@ -608,7 +604,7 @@
   </div>
 </div>
 
-<a class="wa-float" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
+<a class="wa-float" href="https://wa.me/5500000000000?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o." target="_blank" rel="noopener" aria-label="Agendar pelo WhatsApp">
   <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M.06 24l1.68-6.13A11.87 11.87 0 0 1 .16 11.9C.16 5.34 5.5 0 12.06 0a11.82 11.82 0 0 1 8.42 3.49 11.82 11.82 0 0 1 3.48 8.42c0 6.56-5.34 11.9-11.9 11.9a11.9 11.9 0 0 1-5.7-1.45L.06 24zm6.54-3.8c1.68.99 3.29 1.59 5.46 1.59 5.45 0 9.9-4.44 9.9-9.88a9.8 9.8 0 0 0-2.9-6.99A9.8 9.8 0 0 0 12.06 2c-5.45 0-9.9 4.44-9.9 9.9 0 2.28.67 3.98 1.78 5.76l-.99 3.63 3.65-.9zm10.96-5.5c-.07-.12-.27-.2-.57-.35-.3-.15-1.76-.87-2.03-.97-.27-.1-.47-.15-.67.15-.2.3-.77.97-.94 1.17-.17.2-.35.22-.65.07-.3-.15-1.25-.46-2.38-1.47-.88-.78-1.48-1.75-1.65-2.05-.17-.3-.02-.46.13-.61.14-.13.3-.35.45-.53.15-.17.2-.3.3-.5.1-.2.05-.37-.02-.52-.07-.15-.67-1.62-.92-2.22-.24-.58-.49-.5-.67-.51h-.57c-.2 0-.52.07-.8.37-.27.3-1.04 1.02-1.04 2.49 0 1.47 1.07 2.89 1.22 3.09.15.2 2.1 3.2 5.08 4.49.71.3 1.26.49 1.69.62.71.23 1.36.2 1.87.12.57-.08 1.76-.72 2-1.41.25-.7.25-1.29.17-1.41z"/></svg>
 </a>
 
